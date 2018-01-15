@@ -1,4 +1,8 @@
-# first setup Vundle, the package manager
+# first install the latest version of vim
+sudo apt update
+sudo apt install vim
+
+# now setup Vundle, the package manager
 # the following command will get the latest version of vundle from
 # github, and install it in the system
 # for more info, visit https://github.com/VundleVim/Vundle.vim
