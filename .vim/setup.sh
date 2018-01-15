@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # first install the latest version of vim
 sudo apt update
 sudo apt install vim

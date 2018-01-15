@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # first install development tools and cmake
 sudo apt install build-essential cmake
 
