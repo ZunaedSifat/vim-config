@@ -1,23 +1,22 @@
 ## Vim config
-this repository is to keep my vim configuration so that I can get my config anywhere I want!
+This repository is to keep my vim configuration so that I can get my config anywhere I want!
 (The bash codes are designed for ubuntu and ubuntu-based systems)
 
-enter the following commands to start:
+Enter the following commands to start:
 
 ```bash
 git clone https://github.com/ZunaedSifat/vim-config.git
-cd vim-config
-cp -r .vim ~/
-cp .vimrc ~/
-cd ~/.vim
-./setup.sh
+cp -r vim-config/.vim ~/
+cp vim-config/.vimrc ~/
+~/.vim/setup.sh
+vim ~/.vimrc
 ```
 
-Now open the ~/.vimrc and use :PluginInstall command
-Then install ycm things
+Now use :PluginInstall command to install the plugins in when the .vimrc file is opened in vim
+Finally install ycm things
 
 ```bash
-./setup_ycm.sh
+~/.vim/setup_ycm.sh
 ```
 
 ### Bingo! You are done!
