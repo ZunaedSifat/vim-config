@@ -15,11 +15,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Put the plugins here
-
-" YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
-" Nerd tree - file manager
 Plugin 'scrooloose/nerdtree'
+" Plugin 'python-mode/python-mode'
 
 
 " All of your Plugins must be added before the following line
@@ -54,7 +52,7 @@ set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
-set lines=50 columns=150
+set lines=50 columns=129
 " turn syntax highlighting on
 set t_Co=256
 syntax on
@@ -81,14 +79,14 @@ autocmd filetype cpp nnoremap <F4> :!g++ --std=c++0x % -ggdb -o %:r && ./%:r < .
 " compile and run C++ 11 files with <F5>
 autocmd filetype cpp nnoremap <F5> :!g++ --std=c++0x % -ggdb -o %:r && ./%:r <CR>
 " run python3 files with input and output from file
-autocmd filetype cpp nnoremap <F3> :!cp ~/coding/template.cpp %<CR>
+autocmd filetype cpp nnoremap <F3> :!cp ~/.vim/template/cpp.cpp %<CR>
 autocmd filetype python nnoremap <F4> :!python3 % < .in > .out <CR>
 " run python3 files with <F5>
 autocmd filetype python nnoremap <F5> :!python3 % <CR>
 " save all files with <F2> 
-autocmd filetype *   nnoremap <F2> :w <CR>  
 
 " open input, output and source file in gedit to copy
-autocmd filetype cpp   nnoremap <F6> :!subl .in <CR>
-autocmd filetype cpp   nnoremap <F7> :!subl .out <CR>
-autocmd filetype cpp   nnoremap <F8> :!subl % <CR>
+autocmd filetype *   nnoremap <F2> :w <CR>  
+autocmd filetype *   nnoremap <F6> :!subl .in <CR>
+autocmd filetype *   nnoremap <F7> :!subl .out <CR>
+autocmd filetype *   nnoremap <F8> :!subl % <CR>
