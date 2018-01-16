@@ -9,8 +9,7 @@ git clone https://github.com/ZunaedSifat/vim-config.git
 cd vim-config
 cp -r .vim ~/
 cp .vimrc ~/
-cd ~/
-cp .vim
+cd ~/.vim
 ./setup.sh
 ```
 
