@@ -17,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Put the plugins here
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
+Plugin 'b3niup/numbers.vim'
+" Plugin 'vim-scripts/Conque-Shell'
 " Plugin 'python-mode/python-mode'
 
 
@@ -35,7 +37,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -51,8 +52,8 @@ set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
-set textwidth=120
-set lines=50 columns=129
+set textwidth=150
+set lines=50 columns=150
 " turn syntax highlighting on
 set t_Co=256
 syntax on
@@ -64,7 +65,7 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 
 
 
