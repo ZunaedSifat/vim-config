@@ -4,6 +4,7 @@
 sudo apt update
 sudo apt install vim build-essential cmake python-dev python3-dev
 cp -r .vim ~/
+cp .vimrc ~/
 
 # now setup Vundle, the package manager
 # the following command will get the latest version of vundle from
